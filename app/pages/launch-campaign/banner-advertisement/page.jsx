@@ -63,7 +63,10 @@ const PressRelease = () => {
             </select>
           </div>
           <p className='text-[#040C5E] font-semibold'>Available Banner size</p>
-          <div className='flex flex-row gap-x-10'></div>
+          <div className='flex flex-row gap-x-10'>
+            {/* Banner Goes here */}
+            <div></div>
+          </div>
           <div className='flex flex-row w-5/6 justify-between mt-10'>
             <div className='flex flex-col w-1/2'>
               <p className='text-[#040C5E] font-semibold'>

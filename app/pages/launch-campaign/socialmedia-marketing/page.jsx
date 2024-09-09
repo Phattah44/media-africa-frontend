@@ -143,12 +143,207 @@ const PressRelease = () => {
                 </div>
               </div>
             </div>
+            <hr className='my-5 color-[#040C5E]' />
             <div className='w-full'>
-              <p className='text-[#040C5E] font-bold bg-[#DCDFED] text-center p-1 rounded-2xl w-[50%] mt-10 mb-3'>
-                Twitter Followers Campaign
+              <p className='text-[#040C5E] font-bold bg-[#DCDFED] text-center p-1 rounded-2xl w-[50%] my-3'>
+                Twitter Follower Campaign
               </p>
+              <div className='flex flex-row gap-x-5'>
+                <div className='flex flex-col w-1/2'>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Select Numbers of followers
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value=''>select numbers of followers</option>
+                      <option value='1000'>1,000</option>
+                      <option value='3000'>3,000</option>
+                      <option value='5000'>5,000</option>
+                      <option value='10000'>10,000</option>
+                      <option value='15000'>15,000</option>
+                      <option value='30000'>30,000</option>
+                      <option value='50000'>50,000</option>
+                    </select>
+                  </div>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Targeted Audience
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value='All'>All</option>
+                      <option value='entertainment'>Entertainment</option>
+                      <option value='education'>Education</option>
+                      <option value='technology'>Technology</option>
+                      <option value='sport'>Sport</option>
+                      <option value='cryptocurrency'>Cryptocurrency</option>
+                      <option value='religion'>Religion</option>
+                    </select>
+                  </div>
+                </div>
+                <div className='flex flex-col w-1/2'>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Select Gender
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value='all'>All</option>
+                      <option value='male'>Male</option>
+                      <option value='female'>Female</option>
+                    </select>
+                  </div>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Select Age Range
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value='All'>All</option>
+                      <option value='15-20'>15-20</option>
+                      <option value='21-25'>21-25</option>
+                      <option value='26-30'>26-30</option>
+                      <option value='31-35'>31-35</option>
+                      <option value='36-40'>35-40</option>
+                      <option value='41-45'>41-45</option>
+                      <option value='46-50'>46-50</option>
+                      <option value='51-55'>51-55</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className='my-5 color-[#040C5E]' />
+            <div className='w-full'>
+              <p className='text-[#040C5E] font-bold bg-[#DCDFED] text-center p-1 rounded-2xl w-[50%] mb-3'>
+                Telegram Community Management
+              </p>
+              <div className='flex flex-row gap-x-5'>
+                <div className='flex flex-col w-1/2'>
+                  <div className='w-full'>
+                    <label className='text-[#040C5E] font-semibold'>
+                      Telegram Community Url
+                    </label>
+                    <input
+                      type='url'
+                      placeholder='paste your community link'
+                      className='block text-[#040C5E] bg-transparent p-1 my-3  border-solid border-[#040C5E] border-2 w-full'
+                    />
+                  </div>
+                </div>
+                <div className='flex flex-col w-1/2'>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Select Management Duration
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value=''>select duration</option>
+                      <option value='1week'>1 Week</option>
+                      <option value='1month'>1 Month</option>
+                      <option value='3months'>3 Months</option>
+                      <option value='6months'>6 Months</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className='my-5 color-[#040C5E]' />
+            <div className='w-full'>
+              <p className='text-[#040C5E] font-bold bg-[#DCDFED] text-center p-1 rounded-2xl w-[50%] mb-3'>
+                Discord Community Management
+              </p>
+              <div className='flex flex-row gap-x-5'>
+                <div className='flex flex-col w-1/2'>
+                  <div className='w-full'>
+                    <label className='text-[#040C5E] font-semibold'>
+                      Discord Community Url
+                    </label>
+                    <input
+                      type='url'
+                      placeholder='paste your community link'
+                      className='block text-[#040C5E] bg-transparent p-1 my-3  border-solid border-[#040C5E] border-2 w-full'
+                    />
+                  </div>
+                </div>
+                <div className='flex flex-col w-1/2'>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Select Management Duration
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value=''>select duration</option>
+                      <option value='1week'>1 Week</option>
+                      <option value='1month'>1 Month</option>
+                      <option value='3months'>3 Months</option>
+                      <option value='6months'>6 Months</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr className='my-5 color-[#040C5E]' />
+            <div className='w-full'>
+              <p className='text-[#040C5E] font-bold bg-[#DCDFED] text-center p-1 rounded-2xl w-[50%] mb-3'>
+                Facebook Seeding
+              </p>
+              <div className='flex flex-row gap-x-5'>
+                <div className='flex flex-col w-1/2'>
+                  <div className='flex flex-col w-full'>
+                    <p className='text-[#040C5E] font-semibold'>
+                      Duration of Campaign
+                    </p>
+                    <select
+                      id='launchDuration'
+                      value={socialMediaMarketing.launchDuration}
+                      name='launchDuration'
+                      onChange={handleChange}
+                      className='bg-transparent p-2 my-3 w-full border-solid border-[#040C5E] border-2 text-gray-400'
+                    >
+                      <option value=''>select duration</option>
+                      <option value='1week'>1 Week</option>
+                      <option value='1month'>1 Month</option>
+                      <option value='3months'>3 Months</option>
+                      <option value='6months'>6 Months</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <button type='submit'>Add to cart</button>
         </form>
       </div>
     </LaunchCampaignLayout>
