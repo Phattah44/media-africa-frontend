@@ -14,6 +14,8 @@ const PressRelease = () => {
   const handleChange = (e) => {
     e.target.value;
   };
+  const handleSelect = () => {};
+
   return (
     <LaunchCampaignLayout pageTitle='Banner Advertisement'>
       <div>
@@ -65,7 +67,53 @@ const PressRelease = () => {
           <p className='text-[#040C5E] font-semibold'>Available Banner size</p>
           <div className='flex flex-row gap-x-10'>
             {/* Banner Goes here */}
-            <div></div>
+            <div className='w-full flex justify-between'>
+              <div className='w-7/12'>
+                <div className='bg-[#040C5E] p-7 rounded-t-2xl'>
+                  <h2 className='text-white text-xl font-semibold text-center'>
+                    www.nairaland.com
+                  </h2>
+                </div>
+                <div className='flex justify-between p-5 bg-white text-[#040C5E] rounded-b-xl'>
+                  <div className='w-full border-r-2 border-r-[#DCDFED]'>
+                    <h2 className='bg-[#DCDFED] font-semibold px-5 py-2 rounded-l-xl'>
+                      Banner Type
+                    </h2>
+                    <p className='text-sm pt-4 pb-2 px-5'>Leaderboard</p>
+                    <p className='text-sm py-2 px-5'>Large Rectangle</p>
+                    <p className='text-sm py-2 px-5'>Medium Rectangle</p>
+                    <p className='text-sm py-2 px-5'>Wide Skyscraper</p>
+                    <p className='text-sm py-2 px-5'>Skyscraper</p>
+                  </div>
+                  <div className='w-full '>
+                    <h2 className='bg-[#DCDFED] font-semibold px-7 py-2 rounded-r-xl'>
+                      Banner Size
+                    </h2>
+                    <div>
+                      <p className='text-sm pt-4 pb-2 px-7'>728 x 90 px</p>
+                    </div>
+                    <div>
+                      <p className='text-sm py-2 px-7'>336 x 280 px</p>
+                    </div>
+                    <div>
+                      <p className='text-sm py-2 px-7'>300 x 250 px</p>
+                    </div>
+                    <div>
+                      <p className='text-sm py-2 px-7'>160 x 600 px</p>
+                    </div>
+                    <div>
+                      <p className='text-sm py-2 px-7'>160 x 600 px</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='bg-[#040C5E] w-4/12 rounded-2xl'>
+                <h2 className='text-white mt-3 p-3 text-lg'>
+                  Leaderboard Sample
+                </h2>
+                
+              </div>
+            </div>
           </div>
           <div className='flex flex-row w-5/6 justify-between mt-10'>
             <div className='flex flex-col w-1/2'>
